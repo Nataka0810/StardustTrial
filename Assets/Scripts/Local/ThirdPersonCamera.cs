@@ -1,0 +1,49 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ThirdPersonCamera : MonoBehaviour {
+
+	public float smooth = 3f;		// カメラモーションのスムーズ化用変数
+	Transform standardPos;			// the usual position for the camera, specified by a transform in the game
+
+	// スムーズに繋がない時（クイック切り替え）用のブーリアンフラグ
+	bool bQuickSwitch = false;	//Change Camera Position Quickly
+
+	void Start ()
+	{
+		
+	}
+
+	void Update() {
+		if (GameObject.Find ("CamPos")) {
+			// 各参照の初期化
+			standardPos = GameObject.Find ("CamPos").transform;
+
+			//カメラをスタートする
+			transform.position = standardPos.position;	
+			transform.forward = standardPos.forward;
+		}
+	}	
+
+	void FixedUpdate ()	// このカメラ切り替えはFixedUpdate()内でないと正常に動かない
+	{
+		Debug.Log (standardPos.name);
+
+		setCameraPositionNormalView ();
+	}
+
+	void setCameraPositionNormalView ()
+	{
+		if (bQuickSwitch == false) {
+			// the camera to standard position and direction
+			transform.position = Vector3.Lerp (transform.position, standardPos.position, Time.fixedDeltaTime * smooth);	
+			transform.forward = Vector3.Lerp (transform.forward, standardPos.forward, Time.fixedDeltaTime * smooth);
+		} else {
+			// the camera to standard position and direction / Quick Change
+			transform.position = standardPos.position;	
+			transform.forward = standardPos.forward;
+			bQuickSwitch = false;
+		}
+	}
+}
