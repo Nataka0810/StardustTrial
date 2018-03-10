@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour {
 			if (collision.gameObject.tag == "Star") {
 			var script = collision.gameObject.GetComponent<StarMove> ();
 			if (script != null) {
-				Debug.Log ("count");
+				//Debug.Log ("count");
 				Hud.instance.CountStar (1);
 				script.GetStar ();
 			}

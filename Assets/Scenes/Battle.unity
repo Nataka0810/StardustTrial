@@ -600,7 +600,7 @@ MonoBehaviour:
   playerNames: []
   score: {fileID: 1484209756}
   gameTime: {fileID: 1948377615}
-  timeUp: {fileID: 0}
+  timeUp: {fileID: 1840501732}
   countDownChar: {fileID: 2103103490}
 --- !u!1 &1351299370
 GameObject:
@@ -862,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1840501731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1124,7 +1124,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: '0
+
+'
 --- !u!222 &2103103491
 CanvasRenderer:
   m_ObjectHideFlags: 0

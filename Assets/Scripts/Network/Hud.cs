@@ -24,11 +24,11 @@ public class Hud : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("totalScore : " + totalScore);
+		//Debug.Log ("totalScore : " + totalScore);
 	}
 
-	public void SetCountDown (float t) {
-		var active = (t > 0f);
+	public void SetCountDown (int t) {
+		var active = (t > 0);
 		if (active != countDownChar.gameObject.activeSelf) {
 			countDownChar.gameObject.SetActive (active);
 		}

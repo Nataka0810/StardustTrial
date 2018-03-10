@@ -37,7 +37,7 @@ public class BattleManager : NetworkBehaviour {
 	public override void OnStartServer () {
 		serverStartTime = System.DateTime.Now;
 	}
-
+		
 	public override void OnStartClient () {
 		hud = GetComponent<Hud> ();
 		hud.Init ();
@@ -46,17 +46,17 @@ public class BattleManager : NetworkBehaviour {
 	void Update () {
 		if (isServer) {
 			Count ();
-			Debug.Log ("Server");
+			//Debug.Log ("Server");
 		}
 
 		if (isClient) {
 			changeState ();
 			eventManager ();
-			Debug.Log ("Client");
+			//Debug.Log ("Client");
 		}
 
 		if (isLocalPlayer) {
-			Debug.Log ("LocalPlayer");
+			//Debug.Log ("LocalPlayer");
 		}
 	}
 
@@ -80,7 +80,7 @@ public class BattleManager : NetworkBehaviour {
 
 	void Count () {
 		if (isServer) {
-			count = timeLimit - (int)((System.DateTime.Now - serverStartTime).TotalSeconds);
+			count = timeLimit + startCountDownTime - (int)((System.DateTime.Now - serverStartTime).TotalSeconds);
 			RpcSetCount (count);
 		}
 	}
@@ -88,6 +88,11 @@ public class BattleManager : NetworkBehaviour {
 	[ClientRpc]
 	void RpcSetCount (int remainingTime) {
 		hud.SetTime (remainingTime);
+	}
+
+	[ClientRpc]
+	void RpcSetCountDown (int remaingTime) {
+		hud.SetCountDown (remaingTime - timeLimit);
 	}
 
 	[Command]
