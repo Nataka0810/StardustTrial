@@ -26,12 +26,12 @@ public class PlayerMove : MonoBehaviour {
 	}
 				
 	void OnCollisionEnter (Collision collision) {
-			if (collision.gameObject.tag == "Star") {
-			var script = collision.gameObject.GetComponent<StarMove> ();
+			if (collision.gameObject.tag == "Data") {
+			var script = collision.gameObject.GetComponent<DataMove> ();
 			if (script != null) {
 				//Debug.Log ("count");
 				Hud.instance.CountStar (1);
-				script.GetStar ();
+				script.GetData ();
 			}
 		}
 	}
