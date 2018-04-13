@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4838107460533442}
   - component: {fileID: 135422398489050952}
-  - component: {fileID: 114919341582842920}
+  - component: {fileID: 114446898124097782}
   m_Layer: 0
   m_Name: gravity
   m_TagString: Untagged
@@ -61,6 +61,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1730649067026498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4794147975766474}
+  - component: {fileID: 135290048580453466}
+  - component: {fileID: 114372291142002284}
+  m_Layer: 0
+  m_Name: PlayerTriggerArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1880652566491930
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +97,7 @@ GameObject:
   - component: {fileID: 114650128712825532}
   - component: {fileID: 114175878697432558}
   - component: {fileID: 114651837399301524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -113,6 +130,19 @@ Transform:
   m_Father: {fileID: 4982276057886048}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4794147975766474
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730649067026498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4982276057886048}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4838107460533442
 Transform:
   m_ObjectHideFlags: 1
@@ -139,6 +169,7 @@ Transform:
   - {fileID: 4274237079936066}
   - {fileID: 4838107460533442}
   - {fileID: 4539764947298944}
+  - {fileID: 4794147975766474}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -263,6 +294,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5651666e2d26f3a438b46ed3fae36e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114372291142002284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730649067026498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d568163b7308c614c9340aa15c7430d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114390730659720580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,6 +341,17 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114446898124097782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204968667058936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be2590a3c7bdc34d9cf60be76e1c540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114650128712825532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -358,17 +411,6 @@ MonoBehaviour:
     i15: 99
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114919341582842920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204968667058936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16938e940de1e146bf471574369e270, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!124 &124952111557240580
 Behaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +418,18 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233466827808954}
   m_Enabled: 1
+--- !u!135 &135290048580453466
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730649067026498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135422398489050952
 SphereCollider:
   m_ObjectHideFlags: 1

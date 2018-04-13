@@ -24,15 +24,4 @@ public class PlayerMove : MonoBehaviour {
 		GetComponent<Rigidbody> ().AddForce (velocity);
 		transform.Rotate (0, h * 2.0f, 0);
 	}
-				
-	void OnCollisionEnter (Collision collision) {
-			if (collision.gameObject.tag == "Data") {
-			var script = collision.gameObject.GetComponent<DataMove> ();
-			if (script != null) {
-				//Debug.Log ("count");
-				Hud.instance.CountStar (1);
-				script.GetData ();
-			}
-		}
-	}
 }
