@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Fire
   - Data
+  - ItemBox
+  - ShootingStar
+  - OtherPlayer
   layers:
   - Default
   - TransparentFX
@@ -17,8 +20,8 @@ TagManager:
   - 
   - Player
   - Data
-  - 
-  - 
+  - ItemBox
+  - ShootingStar
   - 
   - 
   - 

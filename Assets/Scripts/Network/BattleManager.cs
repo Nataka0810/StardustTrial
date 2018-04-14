@@ -130,6 +130,9 @@ public class BattleManager : NetworkBehaviour {
 
 	[ClientRpc]
 	void RpcSetCount (int remainingTime) {
+		if (remainingTime > 299) {
+			hud.SetCountDown (remainingTime);
+		}
 		hud.SetTime (remainingTime);
 	}
 

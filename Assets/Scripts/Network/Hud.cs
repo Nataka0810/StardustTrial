@@ -10,8 +10,9 @@ public class Hud : MonoBehaviour {
 	public Text[] playerNames;
 	public Text score;
 	public Text gameTime;
-	public Text timeUp;
-	public Text countDownChar;
+	public Image timeUp;
+	public Image countDownImage;
+	public Sprite[] countDownSprite;
 
 	private int totalScore = 0;
 
@@ -19,7 +20,7 @@ public class Hud : MonoBehaviour {
 		instance = this;
 
 		timeUp.gameObject.SetActive (false);
-		countDownChar.gameObject.SetActive (false);
+		countDownImage.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -27,13 +28,18 @@ public class Hud : MonoBehaviour {
 		//Debug.Log ("totalScore : " + totalScore);
 	}
 
-	public void SetCountDown (int t) {
-		var active = (t > 0);
-		if (active != countDownChar.gameObject.activeSelf) {
-			countDownChar.gameObject.SetActive (active);
+	public void SetCountDown (int remainingTime) {
+		int cdNum = remainingTime - 300;	// ゲーム開始前のカウントダウン
+		countDownImage.sprite = countDownSprite [cdNum < 0 ? 0 : cdNum];
+		if (cdNum > 0) {
+			if (countDownImage.gameObject.activeSelf == false)
+				countDownImage.gameObject.SetActive (true);
+		} else if (cdNum == 0) {
+			countDownImage.rectTransform.sizeDelta = new Vector2 (300, 100);
+		} else {
+			if (countDownImage.gameObject.activeSelf == true)
+				countDownImage.gameObject.SetActive (false);
 		}
-		var cdNum = (int)t;
-		countDownChar.text = cdNum > 0 ? cdNum.ToString() : "GO!";
 	}
 
 	public void SetTime (int remainingTime) {
@@ -46,6 +52,7 @@ public class Hud : MonoBehaviour {
 	}
 
 	public void CountStar (int n) {
+		Debug.Log (n);
 		totalScore += n;
 		score.text = "Score : " + totalScore;
 	}

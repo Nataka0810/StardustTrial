@@ -9,6 +9,7 @@ public class Player_NetworkSetup : NetworkBehaviour {
 	[SerializeField] AudioListener audioListener;
 	[SerializeField] GameObject camPos;
 	[SerializeField] GameObject gravity;
+	[SerializeField] GameObject playerTriggerArea;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +18,15 @@ public class Player_NetworkSetup : NetworkBehaviour {
 
 			GetComponent<PlayerMove> ().enabled = true;
 			GetComponent<CameraController> ().enabled = true;
+			GetComponent<ItemHolder> ().enabled = true;
+			playerTriggerArea.GetComponent<PlayerTriggerArea> ().enabled = true;
 
 			playerCam.enabled = true;
 			audioListener.enabled = true;
+
+			this.tag = "Player";
+		} else {
+			this.tag = "OtherPlayer";
 		}
 	}
 }

@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Network\DataMove.cs" />
      <Compile Include="Assets\Scripts\Network\GravityField.cs" />
      <Compile Include="Assets\Scripts\Network\Hud.cs" />
+     <Compile Include="Assets\Scripts\Network\ItemHolder.cs" />
      <Compile Include="Assets\Scripts\Network\ObjectSyncPosition.cs" />
      <Compile Include="Assets\Scripts\Network\Player_NetworkSetup.cs" />
      <Compile Include="Assets\Scripts\Network\Player_SyncPosition.cs" />
@@ -66,12 +67,17 @@
      <Compile Include="Assets\Scripts\Network\PlayerID.cs" />
      <Compile Include="Assets\Scripts\Network\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Network\PlayerTriggerArea.cs" />
+     <Compile Include="Assets\Scripts\Network\ShootingStar.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_editorData.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_GizmoGrid.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_importerSettings.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_tileGizmo.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_tilesetData.cs" />
-     <None Include="Assets\Shader\Data\DataShader.shader" />
+     <None Include="Assets\Shader\garbage\Sphere\GarbageShader.shader" />
+     <None Include="Assets\Shader\stripe\Sphere\StripeShader2.shader" />
+     <None Include="Assets\Shader\bubble\Sphere\BubbleShader.shader" />
+     <None Include="Assets\Shader\stripe\Sphere\StripeShader1.shader" />
+     <None Include="Assets\Shader\light\Sphere\LightShader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

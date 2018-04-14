@@ -97,9 +97,10 @@ GameObject:
   - component: {fileID: 114650128712825532}
   - component: {fileID: 114175878697432558}
   - component: {fileID: 114651837399301524}
+  - component: {fileID: 114167748200022434}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,7 +272,21 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233466827808954}
-  m_Enabled: 1
+  m_Enabled: 0
+--- !u!114 &114167748200022434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880652566491930}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03da06d1a50512f44bfad8431658a651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flag: 0
+  items:
+  - {fileID: 1875096166887770, guid: 55ff0d461629a2348b4a79f1870638a6, type: 2}
 --- !u!114 &114175878697432558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,7 +315,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730649067026498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d568163b7308c614c9340aa15c7430d1, type: 3}
   m_Name: 
@@ -320,6 +335,7 @@ MonoBehaviour:
   audioListener: {fileID: 81708877418246168}
   camPos: {fileID: 1412748525779176}
   gravity: {fileID: 1204968667058936}
+  playerTriggerArea: {fileID: 1730649067026498}
 --- !u!114 &114441106638773460
 MonoBehaviour:
   m_ObjectHideFlags: 1

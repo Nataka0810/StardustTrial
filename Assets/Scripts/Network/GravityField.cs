@@ -6,7 +6,7 @@ public class GravityField : MonoBehaviour {
 
 	void OnTriggerStay (Collider other) {
 		if (other.tag == "Data") {
-			other.GetComponent<DataMove> ().DataAttract(transform.position);
+			other.GetComponent<DataMove> ().DataAttract(gameObject);
 		}
 	}
 }
