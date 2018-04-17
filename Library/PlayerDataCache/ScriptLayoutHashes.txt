@@ -3,7 +3,7 @@ SceneListBegin?
 Assets/Scenes/Title.unity
 Assets/Scenes/Battle.unity
 SceneListEnd?
-52bdba36995526f0abd29f00c9e3e425 Assembly-CSharp.dll:.Hud
+f47c6842953ef05fdc1e4f906d4c06da Assembly-CSharp.dll:.Hud
 7ba1e84ad3d2d8813486668e75f842ce Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.ExtinguishableParticleSystem
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack

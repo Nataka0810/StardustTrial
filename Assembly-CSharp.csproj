@@ -74,6 +74,7 @@
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_tileGizmo.cs" />
      <Compile Include="Assets\Yuponic\YuME\Scripts\YuME_tilesetData.cs" />
      <None Include="Assets\Shader\garbage\Sphere\GarbageShader.shader" />
+     <None Include="Assets\Shader\Data\DataShader.shader" />
      <None Include="Assets\Shader\stripe\Sphere\StripeShader2.shader" />
      <None Include="Assets\Shader\bubble\Sphere\BubbleShader.shader" />
      <None Include="Assets\Shader\stripe\Sphere\StripeShader1.shader" />

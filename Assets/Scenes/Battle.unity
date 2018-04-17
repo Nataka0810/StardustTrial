@@ -158,7 +158,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -522,15 +522,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4263662311962564, guid: 2bb9136052145b24ab3c697f70006433, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -25.681728
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4263662311962564, guid: 2bb9136052145b24ab3c697f70006433, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.881
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 4263662311962564, guid: 2bb9136052145b24ab3c697f70006433, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 57.16063
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4263662311962564, guid: 2bb9136052145b24ab3c697f70006433, type: 2}
       propertyPath: m_LocalRotation.x
@@ -552,11 +552,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 23376481904254866, guid: 2bb9136052145b24ab3c697f70006433,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c0ec5662fbcf29f4483e7e1936a53c42, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bb9136052145b24ab3c697f70006433, type: 2}
   m_IsPrefabParent: 0
