@@ -51,12 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Effect\Scripts\Button_EffectPlay3.cs" />
      <Compile Include="Assets\Scripts\Local\LocalPlayerMove.cs" />
      <Compile Include="Assets\Scripts\Local\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Scripts\Network\BattleManager.cs" />
      <Compile Include="Assets\Scripts\Network\CameraController.cs" />
      <Compile Include="Assets\Scripts\Network\CustomNetworkManager.cs" />
      <Compile Include="Assets\Scripts\Network\DataMove.cs" />
+     <Compile Include="Assets\Scripts\Network\Destroy.cs" />
+     <Compile Include="Assets\Scripts\Network\FireBall.cs" />
      <Compile Include="Assets\Scripts\Network\GravityField.cs" />
      <Compile Include="Assets\Scripts\Network\Hud.cs" />
      <Compile Include="Assets\Scripts\Network\ItemHolder.cs" />

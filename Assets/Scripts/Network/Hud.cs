@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Hud : MonoBehaviour {
 
-	public static Hud instance { get; private set; }
+	//public static Hud instance { get; private set; }
 
 	public Text[] playerNames;
 	public Text score;
@@ -17,7 +17,7 @@ public class Hud : MonoBehaviour {
 	private int totalScore = 0;
 
 	public void Init () {
-		instance = this;
+		//instance = this;
 
 		timeUp.gameObject.SetActive (false);
 		countDownImage.gameObject.SetActive (false);
@@ -51,9 +51,18 @@ public class Hud : MonoBehaviour {
 		}
 	}
 
-	public void CountStar (int n) {
-		Debug.Log (n);
+	public void CountScore (int n) {
+		//Debug.Log (n);
 		totalScore += n;
+		score.text = "Score : " + totalScore;
+	}
+
+	public void ReduceScore (int n) {
+		//Debug.Log (n);
+		totalScore -= n;
+		if (totalScore < 0) {
+			totalScore = 0;
+		}
 		score.text = "Score : " + totalScore;
 	}
 }

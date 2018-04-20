@@ -1,26 +1,28 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Network\BattleManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Network\PlayerTriggerArea.cs">
     <Files>
       <File FileName="Assets\Scripts\Local\LocalPlayerMove.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\BattleManager.cs" Line="133" Column="26" />
+      <File FileName="Assets\Scripts\Network\BattleManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\CameraController.cs" Line="1" Column="1" />
       <File FileName="Assets\Yuponic\YuME\Scripts\YuME_tileGizmo.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\PlayerID.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Local\ThirdPersonCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\Hud.cs" Line="37" Column="27" />
+      <File FileName="Assets\Scripts\Network\Hud.cs" Line="65" Column="4" />
       <File FileName="Assets\Scripts\Network\CustomNetworkManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\Player_SyncPosition.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\Player_NetworkSetup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\DataMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network\Player_NetworkSetup.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Network\DataMove.cs" Line="21" Column="3" />
       <File FileName="Assets\Scripts\Network\Player_SyncRotation.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\ObjectSyncPosition.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\GravityField.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\PlayerTriggerArea.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network\PlayerTriggerArea.cs" Line="27" Column="31" />
       <File FileName="Assets\Standard Assets\Utility\ForcedReset.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Network\ItemHolder.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network\ItemHolder.cs" Line="115" Column="3" />
       <File FileName="Assets\Scripts\Network\ShootingStar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network\Destroy.cs" Line="9" Column="10" />
+      <File FileName="Assets\Scripts\Network\FireBall.cs" Line="9" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

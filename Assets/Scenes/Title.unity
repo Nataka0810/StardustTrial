@@ -113,6 +113,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &97350357
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054645859152562, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 199690917200766096, guid: e1c1e8ab0291b214983db3de94d7715a,
+        type: 2}
+      propertyPath: m_LengthScale
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e1c1e8ab0291b214983db3de94d7715a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &707995726
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,8 +392,8 @@ Camera:
   m_GameObject: {fileID: 1637331061}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0.66896534, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -380,7 +427,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1637331061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -445,8 +492,9 @@ MonoBehaviour:
   m_OnlineScene: 
   m_SpawnPrefabs:
   - {fileID: 1219128633949808, guid: 186dab818e73cbd48a45da6c3f4db8ff, type: 2}
-  - {fileID: 1875096166887770, guid: 55ff0d461629a2348b4a79f1870638a6, type: 2}
-  m_CustomConfig: 1
+  - {fileID: 1042795138235108, guid: d16f80f5006ec73488bac7d36fd3933b, type: 2}
+  - {fileID: 1454168060884738, guid: f7bb58f0dd7f9264d85d8d1ca8076b9a, type: 2}
+  m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
     m_PacketSize: 1440

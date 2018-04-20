@@ -52,6 +52,8 @@ public class BattleManager : NetworkBehaviour {
 		if (isServer) {
 			Count ();	// タイマー起動
 			//Debug.Log ("Server");
+			if (GameObject.FindGameObjectsWithTag ("Data").Length < 100)
+				SpawnData (obj);
 		}
 
 		// クライアントが起動しているとき
@@ -98,8 +100,8 @@ public class BattleManager : NetworkBehaviour {
 		switch (state) {
 		case STATE.START:	// ゲーム開始状態の時
 			if (flag == false)	// 下記の関数を実行したかどうか
-				for (int i = 0; i < 120; i++)
-					CmdSpawnStar (obj);	// オブジェクトの生成
+				for (int i = 0; i < 300; i++)
+					SpawnData (obj);	// オブジェクトの生成
 			flag = true;	// 関数を実行した
 			break;
 
@@ -141,12 +143,12 @@ public class BattleManager : NetworkBehaviour {
 		hud.SetCountDown (remaingTime - timeLimit);
 	}
 
-	[Command]
-	void CmdSpawnStar (GameObject obj) {
+	[Server]
+	void SpawnData (GameObject obj) {
 		Debug.Log ("Spawn" + count + " : " + state);
 		GameObject spawnObject = Instantiate<GameObject> (
 			obj,
-			new Vector3 (Random.Range(-50, 50), 10, Random.Range(-50, 50)),
+			new Vector3 (Random.Range(-50, 50), 100, Random.Range(-50, 50)),
 			Quaternion.Euler(new Vector3 (0, 0, 0))
 		);
 		NetworkServer.Spawn (spawnObject);

@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class ShootingStar : MonoBehaviour {
 
-	private GameObject target; //ターゲットを取得
+	private GameObject target = null; //ターゲットを取得
 
 	//public GameObject explosion;	// 爆発エフェクト
 
 	// Use this for initialization
 	void Start () {
 
-		target = null;
+		target = FindClosestOtherPlayer ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		target = FindClosestOtherPlayer ();
-
 		if (target != null) {
 			// スムーズにターゲットの方向を向く
-			Quaternion targetRotation = Quaternion.LookRotation (target.transform.position - transform.position);
-			transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, Time.deltaTime * 5);
+			//Quaternion targetRotation = Quaternion.LookRotation (target.transform.position - transform.position);
+			//transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, Time.deltaTime * 5);
 
 			// フレーム毎に向く
-			//transform.LookAt (target.transform);
+			transform.LookAt (target.transform);
 		}
 
 		// 前進させる

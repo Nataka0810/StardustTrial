@@ -133,3 +133,4 @@ C:\Users\taka0810\Desktop\StardustTrial\Temp\bin\Debug\UnityEditor.VR.xml
 C:\Users\taka0810\Desktop\StardustTrial\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 C:\Users\taka0810\Desktop\StardustTrial\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\taka0810\Desktop\StardustTrial\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\taka0810\Desktop\StardustTrial\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
